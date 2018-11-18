@@ -1,93 +1,125 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-      <meta charset="utf-8">
-      <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-      <header class="main-header">
-          <nav class="main-navigation">
-              <a class="main-header-logo" href="index.html">
-                  <img src="main-logo.png" alt="Логотип магазина GllacyShop">
-              </a>
-              <ul class="site-navigation">
-                  <li><a href="catalog.html">Каталог</a></li>
-                  <li><a href="delivery.html">Доставка и оплата</a></li>
-                  <li><a href="about.html">О компании</a></li>
-              </ul>
-              <button class="finder visuallly-hidden" type="submit">Поиск</button> <!--Здесь будет форма поиска по сайту-->
-              <ul class="user navigation">
-                  <li class="login-link">Вход</li>
-              </ul>
-                  <a class="button" href="basket.html">2 товара</a>
-          </nav>
-          <p class="working-info">C 10 до 20, ежедневно</p>
-          <p class="telephone-number">8 812 450-25-23</p>
-      </header>
-      <main>
-          <nav class="support-navigation">
-              <a class="support-navigation-item" href="index.html">Главная</a>
-              <a class="support-navigation-item" href="shop.html">Каталог</a>
-              <a class="support-navigation-item" href="milky.html">Сливочное</a>
-          </nav>
-          <h1>Сливочное мороженое</h1>
-          <!--Здесь будет форма фильтра-->
-          <section class="catalog">
-              <h2 class="visuallly-hidden">Каталог продукции</h2>
-              <ul class="catalog-list">
-                  <li class="catalog-list-item">
-                      <img src="milky-orange.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-                      <span>310 р/кг</span>
-                      <a class="button" href="item-card-milky-orange.html">Сливочно-кофейное мороженое с кусочками шоколада</a>
-                  </li>
-                  <li>
-                      <img src="milky-coffe.png" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-                      <span>380 p/кг</span>
-                      <a class="button" href="item-card-milky-coffe.html">Сливочно-кофейное мороженое с кусочками шоколада</a>
-                  </li>
-                  <li>
-                      <img src="milky-strowberry.png" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-                      <span>355 p/кг</span>
-                      <a class="button" href="item-card-milky-strowberry.html">Сливочно-клубничное мороженое с присыпкой из белого шоколада</a>
-                  </li>
-                  <li>
-                      <img src="milky-brulee.png" alt="Сливочное крем-брюле с карамельной подливкой">
-                      <span>415 р/кг</span>
-                      <a class="button" href="item-card-milky-brulee.html">Сливочное крем-брюле с карамельной подливкой</a>
-                  </li>
-                  <!--и так далее-->
-              </ul>
-          </section>
-          <section class="pages">
-              <h2 class="visuallly-hidden">Переключатель страниц</h2>
-              <a href="#prev">Назад</a>
-              <a href="#1">1</a>
-              <a href="#2">2</a>
-              <a href="#3">3</a>
-              <a href="#4">4</a>
-              <a href="#5">5</a>
-              <a href="#next">Вперёд</a>
-          </section>
-      </main>
-      <footer class="main-footer">
-          <ul class="social-button">
-              <li><a class="twiter" href="#">Твитер</a></li>
-              <li><a class="insta" href="#">Инстаграм</a></li>
-              <li><a class="fb" href="#">Фейсбук</a></li>
-              <li><a class="vk" href="#">Вконтакте</a></li>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="main-logo.png" alt="Логотип магазина GllacyShop">
+      </a>
+      <ul class="site-navigation-list">
+        <li><a href="catalog.html">Каталог</a>
+          <ul class="subnavigation-list">
+            <li class="subnavigation-item new-item">
+              <a class="subnavigation-link" href="#">Новинки</a>
+            </li>
+            <li class="subnavigation-item">
+              <a class="subnavigation-link">Сливочное</a>
+            </li>
+            <li class="subnavigation-item">
+              <a class="subnavigation-link" href="#">Щербет</a>
+            </li>
+            <li class="subnavigation-item">
+              <a class="subnavigation-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="subnavigation-item">
+              <a class="subnavigation-link" href="#">Мелорин</a>
+            </li>
           </ul>
-          <ul class="documents-list">
-              <li><a class="provider" href="provider.pdf" target="_blank">Для поставщиков</a></li>
-              <li><a class="production" href="production.pdf" target="_blank">О производстве</a></li>
-              <li><a class="documents" href="documents.pdf" target="_blank">Наши документы</a></li>
-              <li><a class="ecological" href="ecological.pdf" target="_blank">Экологические стандарты</a></li>
-          </ul>
-          <p class="footer-copyright">
-              <a class="html-logo">
-                  <img src="html-logo.png" alt="Логотип HTML-академии">
-              </a>
-              Сделано в <a href="http://htmlacademy.ru">HTML Academy</a>
-            </p>
-      </footer>
-  </body>
+        </li>
+        <li><a href="delivery.html">Доставка и оплата</a></li>
+        <li><a href="about.html">О компании</a></li>
+      </ul>
+      <button class="finder visuallly-hidden" type="submit">Поиск</button>
+      <div>
+        <!--Здесь будет форма поиска по сайту-->
+      </div>
+      <ul class="user navigation">
+        <li class="login-link">Вход</li>
+      </ul>
+      <a class="button" href="basket.html">2 товара</a>
+    </nav>
+    <p class="working-info">C 10 до 20, ежедневно</p>
+    <p class="telephone-number">8 812 450-25-23</p>
+  </header>
+  <main>
+    <nav class="breadcrumbs">
+      <a class="breadcrumbs-item" href="index.html">Главная</a>
+      <a class="breadcrumbs-item" href="shop.html">Каталог</a>
+      <a class="breadcrumbs-item">Сливочное</a>
+    </nav>
+    <h1>Сливочное мороженое</h1>
+    <div>
+      <!--Здесь будет форма фильтра-->
+    </div>
+    <section class="catalog">
+      <h2 class="visuallly-hidden">Каталог продукции</h2>
+      <ul class="ice-list">
+        <li class="ice-item">
+          <img src="milky-orange.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+          <p>310 р<span>/кг</span></p>
+          <a class="item-link" href="#">Сливочное мороженое с апельсиновым джемом и цитрусовой
+            стружкой</a>
+          <a class="button" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="ice-item">
+          <img src="milky-coffe.png" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+          <p>380 р<span>/кг</span></p>
+            <a class="item-link" href="item-card-milky-coffe.html">Сливочно-кофейное мороженое с кусочками шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="ice-item">
+          <img src="milky-strowberry.png" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+          <p>355 р<span>/кг</span></p>
+          <a class="item-link" href="item-card-milky-strowberry.html">Сливочно-клубничное мороженое с присыпкой из
+            белого шоколада</a>
+          <a class="button" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="ice-item">
+          <img src="milky-brulee.png" alt="Сливочное крем-брюле с карамельной подливкой">
+          <p>415 р<span>/кг</span></p>
+          <a class="item-link" href="item-card-milky-brulee.html">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="button" href="#">Быстрый просмотр</a>
+        </li>
+        <!--и так далее-->
+      </ul>
+    </section>
+    <section class="pagination">
+      <h2 class="visuallly-hidden">Переключатель страниц</h2>
+      <a class="pagination-prev" href="#prev">Назад</a>
+      <a class="pagination-item current" href="#1">1</a>
+      <a class="pagination-item" href="#2">2</a>
+      <a class="pagination-item" href="#3">3</a>
+      <a class="pagination-item" href="#4">4</a>
+      <a class="pagination-item" href="#5">5</a>
+      <a class="pagination-next" href="#next">Вперёд</a>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <ul class="social-list">
+      <li class="socail-item"><a class="twiter" href="#">Твитер</a></li>
+      <li class="socail-item"><a class="insta" href="#">Инстаграм</a></li>
+      <li class="socail-item"><a class="fb" href="#">Фейсбук</a></li>
+      <li class="socail-item"><a class="vk" href="#">Вконтакте</a></li>
+    </ul>
+    <ul class="documents-list">
+      <li class="documents-item"><a href="#" target="_blank">Для поставщиков</a></li>
+      <li class="documents-item"><a href="#" target="_blank">О производстве</a></li>
+      <li class="documents-item"><a href="#" target="_blank">Наши документы</a></li>
+      <li class="documents-item"><a href="#" target="_blank">Экологические стандарты</a></li>
+    </ul>
+    <p class="footer-copyright">
+      <a class="html-logo">
+        <img src="html-logo.png" alt="Логотип HTML-академии">
+      </a>
+      <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a></p>
+    </p>
+  </footer>
+</body>
+
 </html>
