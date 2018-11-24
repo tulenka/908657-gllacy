@@ -17,40 +17,73 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина GllacyShop">
       </a>
-      <ul class="site-navigation-list">
-        <li><a href="catalog.html">Каталог</a>
+      <ul class="site-navigation">
+        <li class="site-navigation-item">
+          <a class="site-navigation-link" href="catalog.html" aria-label="Каталог продукции">Каталог</a>
           <ul class="subnavigation-list">
             <li class="subnavigation-item new-item">
-              <a class="subnavigation-link" href="#">Новинки</a>
+              <a class="subnavigation-link" href="#" aria-label="Новинки магазина">Новинки</a>
             </li>
             <li class="subnavigation-item">
-              <a class="subnavigation-link">Сливочное</a>
+              <a class="subnavigation-link" href="#" aria-label="Сливочное мороженое">Сливочное</a>
             </li>
             <li class="subnavigation-item">
-              <a class="subnavigation-link" href="#">Щербет</a>
+              <a class="subnavigation-link" href="#" aria-label="Щербет">Щербет</a>
             </li>
             <li class="subnavigation-item">
-              <a class="subnavigation-link" href="#">Фруктовый лед</a>
+              <a class="subnavigation-link" href="#" aria-label="Фруктовый лед">Фруктовый лед</a>
             </li>
             <li class="subnavigation-item">
-              <a class="subnavigation-link" href="#">Мелорин</a>
+              <a class="subnavigation-link" href="#" aria-label="Мелорин">Мелорин</a>
             </li>
           </ul>
         </li>
-        <li><a href="delivery.html">Доставка и оплата</a></li>
-        <li><a href="about.html">О компании</a></li>
+        <li class="site-navigation-item"><a href="delivery.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
+        <li class="site-navigation-item"><a href="about.html" aria-label="О компании">О компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="user-navigation-item">
-          <div>
-            <!--Здесь будет форма поиска по сайту-->
-          </div>
+        <li class="user-navigation-item">Поиск
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <div>
+              <label clas="visually-hidden" for="search-input">Форма поиска</label>
+              <input class="search-input" type="search" id="search-input" name="search" placeholder="Что ищем?">
+            </div>
+          </form>
         </li>
         <li class="user-navigation-item">Вход
-          <a class="login-link" href="#"></a>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <div>
+              <label class="visually-hidden" for="email-input">Электронная почта</label>
+              <input class="login-input" type="email" id="email-input" name="e-mail" placeholder="Электронная почта"
+                aria-label="Поле ввода e-mail" required>
+            </div>
+            <div>
+              <label class="visually-hidden" for="password-input">Пароль</label>
+              <input class="password-input" type="password" id="password-input" name="e-mail" placeholder="Пароль"
+                aria-label="Поле ввода пароля" required>
+            </div>
+            <button type="submit" aria-label="Подтверждение входа на сайт">Войти</button>
+            <a class="restore" href="#" aria-label="Забыли пароль?">Забыли пароль</a>
+            <a class="restore" href="#" aria-label="Новая регистрация">Новая регистрация</a>
+          </form>
         </li>
-        <li class="user-navigation-item">
-          <a class="basket-link" href="basket.html">2 товара</a>
+        <li class="user-navigation-item">2 товара
+          <form>
+            <div>
+              <button class="delete">Удалить</button>
+              <img src="img/milky-orange.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+              <p>1,5 кг х <span class="price">200 руб.</span></p>
+              <p>300 руб.</p>
+            </div>
+            <div>
+              <button class="delete">Удалить</button>
+              <img src="img/milky-strowberry.jpg" width="33" height="33" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+              <p>1,5 кг х <span class="price">300 руб.</span></p>
+              <p>450 руб.</p>
+            </div>
+            <p class="common-price">Итого: 750 руб.</p>
+            <button type="submit">Оформить заказ</button>
+          </form>
         </li>
       </ul>
     </nav>
@@ -146,47 +179,52 @@
         </li>
       </ul>
     </section>
-    <section class="pagination">
+    <section class="paginator">
       <h2 class="visuallly-hidden">Переключатель страниц</h2>
-      <a class="pagination-prev" href="#prev">Назад</a>
-      <a class="pagination-item current" href="#1">1</a>
-      <a class="pagination-item" href="#2">2</a>
-      <a class="pagination-item" href="#3">3</a>
-      <a class="pagination-item" href="#4">4</a>
-      <a class="pagination-item" href="#5">5</a>
-      <a class="pagination-next" href="#next">Вперёд</a>
+      <a class="paginator-prev" href="#prev">Назад</a>
+      <a class="paginator-item current" href="#1">1</a>
+      <a class="paginator-item" href="#2">2</a>
+      <a class="paginator-item" href="#3">3</a>
+      <a class="paginator-item" href="#4">4</a>
+      <a class="paginator-item" href="#5">5</a>
+      <a class="paginator-next" href="#next">Вперёд</a>
     </section>
   </main>
   <footer class="main-footer">
     <ul class="social-list">
       <li class="socail-item">
-        <a class="twiter" href="#" target="_blank">Твитер</a>
+        <a class="twiter" href="#" target="_blank" aria-label="Глэйси в твитере">Твитер</a>
       </li>
       <li class="socail-item">
-        <a class="insta" href="#" target="_blank">Инстаграм</a>
+        <a class="insta" href="#" target="_blank" aria-label="Глэйси в инстаграме">Инстаграм</a>
       </li>
       <li class="socail-item">
-        <a class="fb" href="#" target="_blank">Фейсбук</a>
+        <a class="fb" href="#" target="_blank" aria-label="Глэйси на фейсбуке">Фейсбук</a>
       </li>
       <li class="socail-item">
-        <a class="vk" href="#" target="_blank">Вконтакте</a>
+        <a class="vk" href="#" target="_blank" aria-label="Глэйси Вконтакте">Вконтакте</a>
       </li>
     </ul>
     <ul class="documents-list">
-      <li class="documents-item">
-        <a href="#" target="_blank">Для поставщиков</a>
-      </li>
-      <li class="documents-item"><a href="#" target="_blank">О производстве</a></li>
-      <li class="documents-item"><a href="#" target="_blank">Наши документы</a></li>
-      <li class="documents-item"><a href="#" target="_blank">Экологические стандарты</a></li>
+      <li class="documents-item"><a href="#" target="_blank" aria-label="Документация для поставщиков">Для поставщиков</a></li>
+      <li class="documents-item"><a href="#" target="_blank" aria-label="О производстве">О производстве</a></li>
+      <li class="documents-item"><a href="#" target="_blank" aria-label="Документы магазина">Наши документы</a></li>
+      <li class="documents-item"><a href="#" target="_blank" aria-label="Экологические стандарты">Экологические
+          стандарты</a></li>
     </ul>
     <p class="footer-copyright">
-      <a class="html-logo">
+      <a class="html-logo" href="http://htmlacademy.ru" aria-label="сайт HTML Academy">
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML-академии">
       </a>
-      <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a></p>
+      <p>Сделано в <a href="http://htmlacademy.ru" aria-label="сайт HTML Academy">HTML Academy &copy; 2017</a></p>
     </p>
   </footer>
+
+
+
+
+
+
 </body>
 
 </html>
