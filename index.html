@@ -4,11 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <style>
-    body {
-      background-color: #849d8f
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,31 +15,31 @@
       <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина GllacyShop">
     </a>
     <nav class="main-navigation">
-      <ul class="site-navigation">
+      <ul class="site-navigation-list">
         <li class="site-navigation-item">
-          <a class="site-navigation-link" href="catalog.html" aria-label="Каталог продукции">Каталог</a>
+          <a href="catalog.html" aria-label="Каталог продукции">Каталог</a>
           <ul class="subnavigation-list">
             <li class="subnavigation-item new-item">
-              <a class="subnavigation-link" href="#" aria-label="Новинки магазина">Новинки</a>
+              <a class="subnavigation-link" href="#">Новинки</a>
             </li>
             <li class="subnavigation-item">
-              <a class="subnavigation-link" href="#" aria-label="Сливочное мороженое">Сливочное</a>
+              <a class="subnavigation-link" href="#">Сливочное</a>
             </li>
             <li class="subnavigation-item">
-              <a class="subnavigation-link" href="#" aria-label="Щербет">Щербет</a>
+              <a class="subnavigation-link" href="#">Щербет</a>
             </li>
             <li class="subnavigation-item">
-              <a class="subnavigation-link" href="#" aria-label="Фруктовый лед">Фруктовый лед</a>
+              <a class="subnavigation-link" href="#">Фруктовый лед</a>
             </li>
             <li class="subnavigation-item">
-              <a class="subnavigation-link" href="#" aria-label="Мелорин">Мелорин</a>
+              <a class="subnavigation-link" href="#">Мелорин</a>
             </li>
           </ul>
         </li>
         <li class="site-navigation-item"><a href="delivery.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
         <li class="site-navigation-item"><a href="about.html" aria-label="О компании">О компании</a></li>
       </ul>
-      <ul class="user-navigation">
+      <ul class="user-navigation-list">
         <li class="user-navigation-item">Поиск
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <div>
@@ -176,8 +174,7 @@
       <article class="blog-news">
         <h2 class="visually-hidden">Новости блога</h2>
         <h3>Новое в нашем блоге</h3>
-        <a class="button" href="blog.html" aria-label="10 способов сервировки фруктовых щербетов к столу">10 способов
-          сервировки фруктовых щербетов к столу</a>
+        <a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
       <section class="subscribe">
         <h2 class="visually-hidden">Оформление подписки</h2>
@@ -185,7 +182,7 @@
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <input class="subscribe-icon" type="email" name="e-mail" placeholder="Электронная почта" aria-label="Поле ввода e-mail">
-          <button type="submit" aria-label="Потдвердить адрес подписки">Отправить</button>
+          <button type="submit">Отправить</button>
         </form>
       </section>
     </div>
@@ -220,17 +217,19 @@
       </li>
     </ul>
     <ul class="documents-list">
-      <li class="documents-item"><a href="#" target="_blank" aria-label="Документация для поставщиков">Для поставщиков</a></li>
-      <li class="documents-item"><a href="#" target="_blank" aria-label="О производстве">О производстве</a></li>
-      <li class="documents-item"><a href="#" target="_blank" aria-label="Документы магазина">Наши документы</a></li>
-      <li class="documents-item"><a href="#" target="_blank" aria-label="Экологические стандарты">Экологические
+      <li class="documents-item"><a href="#" target="_blank">Для поставщиков</a></li>
+      <li class="documents-item"><a href="#" target="_blank">О производстве</a></li>
+      <li class="documents-item"><a href="#" target="_blank">Наши документы</a></li>
+      <li class="documents-item"><a href="#" target="_blank">Экологические
           стандарты</a></li>
     </ul>
     <p class="footer-copyright">
       <a class="html-logo" href="http://htmlacademy.ru" aria-label="сайт HTML Academy">
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML-академии">
       </a>
-      <p>Сделано в <a href="http://htmlacademy.ru" aria-label="сайт HTML Academy">HTML Academy &copy; 2017</a></p>
+      <p class="text-copyright">Сделано в 
+        <a href="http://htmlacademy.ru" aria-label="сайт HTML Academy">HTML Academy</a>
+        &copy; 2017</p>
     </p>
   </footer>
 

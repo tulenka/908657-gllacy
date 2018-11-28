@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    
+    background-color: #849d8f;
+}
+a{
+    text-decoration: none;
+    color: #ffffff 
+}
+button,
+.button{
+    font: inherit;
+
+    background-image: linear-gradient(to top, #e74a35, #f26843);
+
+    text-align: center;
+    vertical-align: middle;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
+}
+.site-navigation-list,
+.subnavigation-list,
+.user-navigation-list,
+.slider-list,
+.sales-list,
+.ice-list,
+.about-us-list,
+.social-list,
+.documents-list{
+  list-style: none;
+}
+.site-navigation-item a{ 
+    font-size: 16px;
+    line-height: 18px;
+
+    text-decoration-line: underline;
+}
+.site-navigation-item a:hover,
+.site-navigation-item a:focus{
+    color: #323232;
+    background-color: #f7f6f3;
+    text-decoration-line: none;
+}
+.subnavigation-item a{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    text-decoration-line: none;
+}
+.new-item a{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    text-decoration-line: none;
+}
+.subnavigation-item a:hover,
+.subnavigation-item a:focus{
+    color: #323232;
+    background-color: #fbded7
+}
+.user-navigation-list li{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+.working-info {
+    font-size: 14px;
+    line-height: 16px;
+
+    background-color: #849d8f;
+
+    text-align: right;
+}
+.telephone-number {
+    font-size: 22px;
+
+    background-color: #849d8f;
+
+    text-align: right;
+}
+.sales-list p{
+    font-size: 18px;
+    line-height: 22px;
+}
+.sales-list b{
+    font-size: 35px;
+    line-height: 41px;
+}
+.sales-item-respberry{
+    background-color: #820323;
+    background-image: url(/908657-gllacy/img/rasp-background.jpg);
+}
+.sales-item-shoko{
+    background-color: #855f4f;
+    background-image: url(/908657-gllacy/img/shoko-background.jpg);
+}
+.ice-item p{
+    font-size: 45px;
+    line-height: 45px;
+}
+.ice-item .item-link {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+
+    text-decoration-line: underline;
+    text-align: center;
+}
+.about-us {
+    color: #323232;
+    background-color: #f0e4c8;
+    background-image: url(/908657-gllacy/img/waffle-background.jpg);
+
+    text-align: left;
+}
+.about-us-description {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.about-us-item {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.blog-news {
+    background-color: #ffffff;
+    background-image: url(/908657-gllacy/img/blog-background.jpg);
+    background-repeat: no-repeat;
+}
+.blog-news h3 {
+    color: #323232;
+
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.blog-news a {
+    color: #323232;
+
+    font-size: 24px;
+    line-height: 30px;
+
+    text-decoration-line: underline;
+}
+.subscribe {
+    background-color: #f8f7f4;
+    background-image: url(/908657-gllacy/img/subscribe-background.jpg);
+    background-repeat: no-repeat;
+}
+.subscribe p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #5a5a5a;
+}
+.contacts {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #323232;
+
+    background-color: #ffffff;
+}
+.contact{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #323232
+}
+.documents-list a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+.documents-list .documents-item:first-child {
+    font-weight: 700;
+}
+.text-copyright{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #fefefe;
+}
+.text-copyright a{
+    text-decoration-line: underline;
+}
+.modal{
+    color: #323232;
+    background-color: #f8f7f4;
+}
+.link-form h2{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.blog-news a:hover,
+.blog-news a:focus{
+    color: #e84d37;
+}
+.ice-item .item-link:hover,
+.ice-item .item-link:focus,
+.documents-list a:hover,
+.documents-list a:focus,
+.text-copyright a:hover,
+.text-copyright a:focus {
+    color: #ffbc9e
+}
