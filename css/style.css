@@ -11,6 +11,10 @@ body {
   background-color: #849d8f;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: #ffffff
@@ -20,6 +24,7 @@ a {
   font: inherit;
   border: none;
   background-color: transparent;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
   color: #ffffff;
   text-align: center;
@@ -32,10 +37,36 @@ a {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
 }
 
+.container {
+  width: 1146px;
+  padding: 9px 27px 0;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.main-navigation {
+  display: flex;
+}
+
 .site-navigation-list,
 .subnavigation-list,
 .user-navigation-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.site-navigation-list {
+  width: 349px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
 }
 
 .site-navigation-item a {
@@ -52,11 +83,36 @@ a {
   text-decoration-line: none;
 }
 
+/*временное отключение*/
+.subnavigation-list {
+  display: none;
+}
+
 .subnavigation-item a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   text-decoration-line: none;
+}
+
+.user-navigation-list {
+  width: 265px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  align-items: center;
+}
+
+.user-navigation-list li {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+/*временное отключение*/
+.search-form,
+.login-form {
+  display: none;
 }
 
 .new-item a {
@@ -72,16 +128,12 @@ a {
   background-color: #fbded7
 }
 
-.user-navigation-list li {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-}
+.header-info {}
 
 .working-info {
   font-size: 14px;
   line-height: 16px;
-
+  margin: 0 0 8px;
   background-color: #849d8f;
 
   text-align: right;
@@ -89,7 +141,7 @@ a {
 
 .telephone-number {
   font-size: 22px;
-
+  margin: 0;
   background-color: #849d8f;
 
   text-align: right;
@@ -99,13 +151,39 @@ a {
   list-style: none;
 }
 
+.slider-item {
+  display: none;
+}
+
+.slider-item-brulee-raspberry {
+  display: block;
+}
+
+.slider-item .button {
+  font-size: 32px;
+  line-height: 44px;
+  display: block;
+  width: 264px;
+  margin: 0 auto;
+}
+
 .sales-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .sales-list p {
   font-size: 18px;
   line-height: 22px;
+}
+
+.sales-item {
+  width: 560px;
+  height: 229px;
 }
 
 .sales-list b {
@@ -123,14 +201,39 @@ a {
   background-image: url(../img/choko-background.jpg);
 }
 
-.ice-list {
-  list-style: none;
+.popular {
+  margin-bottom: 41px;
 }
 
-.ice-item .item-link:hover,
-.ice-item .item-link:focus {
-  color: #ffbc9e
+.ice-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+.ice-item {
+  width: 267px;
+  text-align: center;
+}
+
+/*.ice-item {
+  width: 293px;
+  box-sizing: border-box;
+  padding-left: 13px;
+  padding-right: 14px;
+  padding-top: 6px;
+  text-align: center;
+}
+.ice-item:first-child {
+  padding-left: 0;
+}
+
+.ice-item:nth-child(4n) {
+  padding-right: 0;
+}*/
 
 .ice-item p {
   font-size: 45px;
@@ -142,38 +245,72 @@ a {
   line-height: 22px;
   font-weight: 500;
 
+  display: block;
   text-decoration-line: underline;
   text-align: center;
 }
 
-.about-us-list {
-  list-style: none;
+.ice-item .item-link:hover,
+.ice-item .item-link:focus {
+  color: #ffbc9e
+}
+
+.paginator {
+  margin-top: 80px;
+  text-align: end;
 }
 
 .about-us {
   color: #323232;
   background-color: #f0e4c8;
   background-image: url(../img/waffle-background.jpg);
+  width: 1146px;
+  height: 306px;
+  margin-bottom: 40px;
 
   text-align: left;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us-description {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  margin: 29px 112px 26px 21px;
+}
+
+.about-us-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .about-us-item {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  width: 480px;
+  margin-bottom: 10px;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
 }
 
 .blog-news {
   background-color: #ffffff;
   background-image: url(../img/blog-background.jpg);
   background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
 }
 
 .blog-news h3 {
@@ -193,10 +330,17 @@ a {
   text-decoration-line: underline;
 }
 
+.blog-news a:hover,
+.blog-news a:focus {
+  color: #e84d37;
+}
+
 .subscribe {
   background-color: #f8f7f4;
   background-image: url(../img/subscribe-background.jpg);
   background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
 }
 
 .subscribe p {
@@ -211,8 +355,25 @@ a {
   line-height: 20px;
   font-weight: 400;
   color: #323232;
+}
 
+.contacts .container {
+  position: relative;
+}
+
+.contacts-map img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-info {
   background-color: #ffffff;
+  position: absolute;
+  right: 27px;
+  top: 63px;
+  width: 302px;
+  height: 305px;
+  z-index: 1;
 }
 
 .contact {
@@ -222,12 +383,25 @@ a {
   color: #323232
 }
 
+.main-footer {
+  display: flex;
+}
+
 .social-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .documents-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 300px;
+  margin-left: 450px;
 }
 
 .documents-list a:hover,
@@ -240,10 +414,17 @@ a {
   line-height: 18px;
   font-weight: 400;
   text-decoration-line: underline;
+  text-align: left;
 }
 
 .documents-item:first-child a {
   font-weight: 700;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
 }
 
 .text-copyright {
@@ -265,15 +446,11 @@ a {
 .modal {
   color: #323232;
   background-color: #f8f7f4;
+  display: none;
 }
 
 .link-form h2 {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
-}
-
-.blog-news a:hover,
-.blog-news a:focus {
-  color: #e84d37;
 }
