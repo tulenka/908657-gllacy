@@ -17,7 +17,7 @@
         </a>
         <ul class="site-navigation-list">
           <li class="site-navigation-item">
-            <a href="catalog.html" aria-label="Каталог продукции">Каталог</a>
+            <a href="shop.html" aria-label="Каталог продукции">Каталог</a>
             <ul class="subnavigation-list">
               <li class="subnavigation-item new-item">
                 <a class="subnavigation-link" href="#">Новинки</a>
@@ -43,7 +43,7 @@
           <li class="user-navigation-item visually-hidden">Поиск
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <div>
-                <label clas="visually-hidden" for="search-input">Форма поиска</label>
+                <label class="visually-hidden" for="search-input">Форма поиска</label>
                 <input class="search-input" type="search" id="search-input" name="search" placeholder="Что ищем?">
               </div>
             </form>
@@ -75,7 +75,9 @@
         <p class="telephone-number">8 812 450-25-23</p>
       </div>
     </header>
-    <main class="main-content">
+  </div>
+  <main class="main-content">
+    <div class="container">
       <h1 class="visually-hidden">Магазин Glaccy Shop</h1>
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
@@ -94,9 +96,9 @@
           </li>
         </ul>
         <div>
-          <buttun class="slider-button current visually-hidden">Кнопка №1</buttun>
-          <buttun class="slider-button visually-hidden">Кнопка №2</buttun>
-          <buttun class="slider-button visually-hidden">Кнопка №3</buttun>
+          <button class="slider-button current visually-hidden">Кнопка №1</button>
+          <button class="slider-button visually-hidden">Кнопка №2</button>
+          <button class="slider-button visually-hidden">Кнопка №3</button>
         </div>
       </section>
       <section class="sales">
@@ -119,7 +121,7 @@
         <h2 class="visually-hidden">Популярное мороженое</h2>
         <ul class="ice-list">
           <li class="ice-item hit">
-            <img src="img/milky-orange.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+            <img src="img/milky-orange.jpg" width="267" height="267" alt="Сливочное c апельсиновым джемом и цитрусовой стружкой">
             <p>310 ₽<span>/кг</span></p>
             <a class="item-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <a class="button" href="#" aria-label="Карточка товара">Быстрый просмотр</a>
@@ -127,8 +129,7 @@
           <li class="ice-item hit">
             <img src="img/milky-coffe.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
             <p>380 ₽<span>/кг</span></p>
-            <a class="item-link" href="#">Сливочно-кофейное
-              мороженое с кусочками шоколада</a>
+            <a class="item-link" href="#">Сливочно-кофейное мороженое с кусочками шоколада</a>
             <a class="button" href="#" aria-label="Карточка товара">Быстрый просмотр</a>
           </li>
           <li class="ice-item hit">
@@ -146,7 +147,7 @@
         </ul>
       </section>
       <section class="about-us">
-        <!--<h2 class="visually-hidden">О магазине</h2>-->
+        <h2 class="visually-hidden">О магазине</h2>
         <p class="about-us-description">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собстенного
           производства на развес</p>
         <ul class="about-us-list">
@@ -182,28 +183,28 @@
           <p>Подпишитесь на нашу сладкую рассылку и будьте всегла в курсе всего самого вкусного, что у нас проиходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <input class="subscribe-icon" type="email" name="e-mail" placeholder="Электронная почта" aria-label="Поле ввода e-mail">
+            <input class="subscribe-icon" type="email" name="e-mail" placeholder="Электронная почта">
             <button type="submit">Отправить</button>
           </form>
         </section>
       </div>
-  </div>
-  <section class="contacts">
-    <h2 class="visually-hidden">Контакты магазина</h2>
-    <div class="container">
-      <div class="contact-info">
-        <p class="info-description">Адрес галвного офиса и офлайн-магазина:</p>
-        <p class="contact">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-        <p class="info-description">Для заказов по телефону:</p>
-        <p class="contact">8 812 450 25 25</p>
-        <p class="info-description">(с 10 до 20 ежедневно)</p>
-        <a class="button" href="#">Форма обратной связи<a>
+    </div>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="visually-hidden">Контакты магазина</h2>
+        <div class="contact-info">
+          <p class="info-description">Адрес галвного офиса и офлайн-магазина:</p>
+          <p class="contact">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="info-description">Для заказов по телефону:</p>
+          <p class="contact">8 812 450 25 25</p>
+          <p class="info-description">(с 10 до 20 ежедневно)</p>
+          <a class="button" href="#">Форма обратной связи</a>
+        </div>
       </div>
-    </div>
-    <div class="contacts-map">
-      <img src="img/map.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    </div>
-  </section>
+      <div class="contacts-map">
+        <img src="img/map.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </div>
+    </section>
   </main>
   <div class="container">
     <footer class="main-footer">
@@ -225,17 +226,16 @@
         <li class="documents-item"><a href="#" target="_blank">Для поставщиков</a></li>
         <li class="documents-item"><a href="#" target="_blank">О производстве</a></li>
         <li class="documents-item"><a href="#" target="_blank">Наши документы</a></li>
-        <li class="documents-item"><a href="#" target="_blank">Экологические
-            стандарты</a></li>
+        <li class="documents-item"><a href="#" target="_blank">Экологические стандарты</a></li>
       </ul>
       <div class="footer-copyright">
-        <a class="html-logo" href="http://htmlacademy.ru" aria-label="сайт HTML Academy">
+        <a class="html-logo" href="http://htmlacademy.ru">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML-академии">
         </a>
         <p class="text-copyright">Сделано в
-          <a href="http://htmlacademy.ru" aria-label="сайт HTML Academy">HTML Academy</a>
+          <a href="http://htmlacademy.ru">HTML Academy</a>
           &copy; 2017</p>
-        </p>
+        </div>
     </footer>
   </div>
 
@@ -249,14 +249,13 @@
           aria-label="Имя" required>
       </div>
       <div>
-        <label class="visually-hidden" for="link-emeil">Электронная почта</label>
+        <label class="visually-hidden" for="feedback-email">Электронная почта</label>
         <input class="feedback-input" type="email" id="feedback-email" name="e-mail" placeholder="Ваша почта для ответа?"
-          aria-label="Электронная почта" required>
+          required>
       </div>
       <div>
         <label class="visually-hidden" for="comments"></label>
-        <textarea class="feedback-text" type="text" id="comments" name="comments" placeholder="Напишите что-ниубдь..."
-          aria-label="Комментарии к обратной связи">
+        <textarea class="feedback-text" rows="7" id="comments" name="comments" placeholder="Напишите что-ниубдь..."></textarea>
       </div>
       <button type="submit">Отправить</button>
     </form>

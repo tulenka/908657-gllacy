@@ -39,12 +39,13 @@ a {
 
 .container {
   width: 1146px;
-  padding: 9px 27px 0;
+  padding: 0 27px;
   margin: 0 auto;
 }
 
 .main-header {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-bottom: 10px;
 }
@@ -109,6 +110,10 @@ a {
   font-weight: 500;
 }
 
+.user-navigation-item form {
+  display: none;
+}
+
 /*временное отключение*/
 .search-form,
 .login-form {
@@ -128,23 +133,19 @@ a {
   background-color: #fbded7
 }
 
-.header-info {}
+.header-info {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+}
 
 .working-info {
   font-size: 14px;
   line-height: 16px;
-  margin: 0 0 8px;
-  background-color: #849d8f;
-
-  text-align: right;
 }
 
 .telephone-number {
   font-size: 22px;
-  margin: 0;
-  background-color: #849d8f;
-
-  text-align: right;
 }
 
 .slider-list {
@@ -183,7 +184,6 @@ a {
 
 .sales-item {
   width: 560px;
-  height: 229px;
 }
 
 .sales-list b {
@@ -310,7 +310,6 @@ a {
   background-image: url(../img/blog-background.jpg);
   background-repeat: no-repeat;
   width: 560px;
-  height: 220px;
 }
 
 .blog-news h3 {
@@ -340,7 +339,6 @@ a {
   background-image: url(../img/subscribe-background.jpg);
   background-repeat: no-repeat;
   width: 560px;
-  height: 220px;
 }
 
 .subscribe p {
@@ -372,8 +370,6 @@ a {
   right: 27px;
   top: 63px;
   width: 302px;
-  height: 305px;
-  z-index: 1;
 }
 
 .contact {
